@@ -4,6 +4,54 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wdth,wght@0,18..144,87..112,300..900;1,18..144,87..112,300..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
 
 /* ///ADD/// CSS Reset */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
 
 
 /* Root Variables */
@@ -39,13 +87,82 @@ body.dark-mode {
 }
 
 /* ///ADD/// Skip Link Styles */
-
+#skip{
+	position: absolute;
+	left: -10000px;
+	top: auto;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+}
 /* ///ADD/// Navigation Styles */
+nav ul {
+  display: grid;
+  grid-template-columns:repeat(4, 1fr);
+}  
 
+nav a, nav h2 {
+  color:var(--blue-bulletin);
+  padding:15px;
+  text-decoration:none;
+  font-weight: 700;
+  font-size: 1em;
+
+}
+
+nav a:hover, nav h2:hover {
+  color:var(--news-flash);
+}
 /* ///ADD/// Global Layout Styles */
+header, footer {
+  background-color: var(--watchdog-white);
+  width: 100%;
+  
+}
+header {
+  border-bottom:3px solid #F7CE3E;
+  display:grid;
+  grid-template-columns:1fr 1fr 1fr;
+}
+
+body{
+	box-sizing: border-box;
+	line-height: 1.35;
+	font-family: var(--font-body);
+	
+}
+
 
 /* ///ADD/// Global Text Styles */
+h1, h2, h3{
+	font-weight: bold;
+	text-align: center;
+	margin: 1rem 0;
+  font-family: var(--font-heading);
+  color: var(--truth-text);
+}
 
+h1{
+	font-size: 2rem;
+  color: var(--blue-bulletin);
+}
+
+h2{
+	font-size: 1.5rem;
+  color: var(--news-flash);
+}
+
+h3{
+  font-size: 1rem;
+  color: var(--story-subtitle);
+}
+
+p {
+  color: var(--truth-text);
+  font-family:var(--font-body);
+  font-size: 1em;
+  line-height: 1.5em;
+}
 
 /* ///ADD/// medium styles 620px */
 
