@@ -121,15 +121,6 @@ ul {
   overflow: hidden;
   background-color: var(--blue-bulletin);
 }
-ul li {
-  float: right;
-}
-
-
-ul.menu li a{
-  float: right;
-  padding: 15px;
-}
 
 nav a, nav h2 {
   color:var(--watchdog-white);
@@ -165,20 +156,31 @@ body{
  
 }
 
-#main-content p {
+main p {
   margin: 0 0 0.5rem 0;
+  text-align: left;
+}
+
+main section {
+  margin: 0 auto;
+}
+
+.tagline {
   text-align: center;
+  font-weight: bold;
+  color: var(--truth-text);
 }
 
-article {
-  display:block;
-  gap: 1rem;
+blockquote{
+  text-align: center;
+  font-weight: bold;
+  color: var(--truth-text);
 }
-
 .breaking video {
-  max-width: 750px;
+  width: 45%;
   height: auto;
-  padding: 70px;
+  padding: 0;
+  border-radius: 6px;
 }
 
 
@@ -192,7 +194,23 @@ article {
   text-align: center;
 }
 
+.breaking .copy {
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+  justify-content: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 1rem 0;
+}
 
+.breaking .copy p {
+  flex: 1;
+  text-align: left;
+  line-height: 1.4;
+  width: 50%;
+  max-width: 420px;
+}
 
 
 
