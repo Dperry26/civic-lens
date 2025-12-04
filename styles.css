@@ -346,9 +346,6 @@ input:focus, select:focus, textarea:focus{
 	box-shadow: 0 0 0 0.09em currentColor;
 }
 
-input:error, select:error, textarea:error{
-	background-color: #c71819;
-}
 
 fieldset{
 	margin: 0.5em auto;
@@ -506,8 +503,10 @@ fieldset input{
     background-color: var(--blue-bulletin);
     border-bottom: 4px solid var(--news-flash);
   }
+
   nav:has(#menu-toggle:checked) .menu {
     display: grid;
     gap: 1rem;
   }
+
 }
