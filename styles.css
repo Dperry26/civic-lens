@@ -198,7 +198,7 @@ main section {
 .tagline {
   text-align: center;
   font-weight: bold;
-  color: var(--truth-text);
+  color: var(--watchdog-white);
 }
 
 .intro {
@@ -371,15 +371,6 @@ fieldset input{
 	width: 20px;
 }
 
-.banner {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  list-style: none;
-  margin: 0;
-  padding: 1rem 2rem;
-  background-color: var(--blue-bulletin);
-  color: var(--watchdog-white);
-}
 
 
 /* ///ADD/// medium styles 620px */
